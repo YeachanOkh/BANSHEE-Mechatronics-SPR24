@@ -9,6 +9,7 @@ class CameraNode(Node):
         super().__init__("camera_node")
         self.x_values_equal = 0
         self.cameraRun()
+        self.get_logger().info(str(self.x_values_equal))
 
     def subscriberNode():
         pass
@@ -45,6 +46,8 @@ class CameraNode(Node):
 
             id_needed = 2
 
+            middle_x = 0
+
             # 5. Draw detected markers on the frame and calculate overlap
             # check to see if ar marker is being recognized
             if marker_ids is not None:
@@ -61,11 +64,6 @@ class CameraNode(Node):
                         print(int((width / 2) + 2))
                         print(int((width / 2) - 2))
                         print(middle_x)
-
-                        if (middle_x <= int((width / 2) + 2)) and (middle_x >= int((width / 2) - 2)):
-                            self.x_values_equal = 1
-                            break
-
 
                     # intersection_area = cv2.contourArea(cv2.convexHull(np.concatenate([middle_box, aruco_box])))
                     # union_area = box_size**2 + cv2.contourArea(cv2.convexHull(aruco_box)) - intersection_area
@@ -90,6 +88,10 @@ class CameraNode(Node):
 
                 # Draw the center box on the frame
                 cv2.rectangle(frame, (box_x, box_y), (box_x + box_size, box_y + box_size), (0, 255, 0), 2)
+
+            if (middle_x <= int((width / 2) + 2)) and (middle_x >= int((width / 2) - 2)):
+                            self.x_values_equal = 1
+                            break
 
             cv2.imshow("Camera live stream", frame)
 
