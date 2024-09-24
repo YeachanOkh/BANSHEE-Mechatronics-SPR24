@@ -101,14 +101,7 @@ import cv2
 import matplotlib.pyplot as plt     
 from cv2 import aruco
 import numpy as np
-235235235235
-235235253
-235235235235235235235
-235235
 
-
-235235235
-235235235
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_100)  # Choose your desired dictionary
 detector_parameters = cv2.aruco.DetectorParameters()
 refine_parameters = cv2.aruco.RefineParameters()
