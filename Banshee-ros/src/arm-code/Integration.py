@@ -105,6 +105,7 @@ def Handshake():
     time.sleep(0.5)
     motor.dxlSetVelo([55, 55, 55, 55, 55], [0, 1, 2, 3, 4])
     motor.simMotorRun([155, 175], [4, 3])
+    23523523523523
     time.sleep(0.1)
     motor.simMotorRun([195, 205], [4, 3])
     time.sleep(0.1)
