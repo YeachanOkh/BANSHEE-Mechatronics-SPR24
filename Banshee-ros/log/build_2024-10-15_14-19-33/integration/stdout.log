@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/integration/integration.egg-info/PKG-INFO
+writing dependency_links to ../../build/integration/integration.egg-info/dependency_links.txt
+writing entry points to ../../build/integration/integration.egg-info/entry_points.txt
+writing requirements to ../../build/integration/integration.egg-info/requires.txt
+writing top-level names to ../../build/integration/integration.egg-info/top_level.txt
+reading manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+running build
+running build_py
+copying integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+running install
+running install_lib
+copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/integration_node.py to integration_node.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/integration/integration.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info
+running install_scripts
+Installing integration_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/integration
+writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log'

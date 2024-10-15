@@ -1,0 +1,3 @@
+[console_scripts]
+integration_node = integration.integration_node:main
+

@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/publisherID/publisherID.egg-info/PKG-INFO
+writing dependency_links to ../../build/publisherID/publisherID.egg-info/dependency_links.txt
+writing entry points to ../../build/publisherID/publisherID.egg-info/entry_points.txt
+writing requirements to ../../build/publisherID/publisherID.egg-info/requires.txt
+writing top-level names to ../../build/publisherID/publisherID.egg-info/top_level.txt
+reading manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+writing manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/publisherID/publisherID.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisher_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/publisherID
+writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/install.log'

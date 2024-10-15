@@ -9,6 +9,7 @@ setup.py
 ../../build/camera_node/camera_node.egg-info/top_level.txt
 ../../build/camera_node/camera_node.egg-info/zip-safe
 camera_node/__init__.py
+camera_node/camera_no_web.py
 camera_node/camera_node.py
 resource/camera_node
 test/test_copyright.py

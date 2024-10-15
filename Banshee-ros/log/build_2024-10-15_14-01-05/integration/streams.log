@@ -1,0 +1,43 @@
+[0.775s] Invoking command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/integration': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log --single-version-externally-managed install_data
+[0.929s] running egg_info
+[0.929s] creating ../../build/integration/integration.egg-info
+[0.929s] writing ../../build/integration/integration.egg-info/PKG-INFO
+[0.929s] writing dependency_links to ../../build/integration/integration.egg-info/dependency_links.txt
+[0.929s] writing entry points to ../../build/integration/integration.egg-info/entry_points.txt
+[0.929s] writing requirements to ../../build/integration/integration.egg-info/requires.txt
+[0.930s] writing top-level names to ../../build/integration/integration.egg-info/top_level.txt
+[0.930s] writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.931s] reading manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.931s] writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.932s] running build
+[0.932s] running build_py
+[0.932s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build
+[0.932s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib
+[0.933s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.933s] copying integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.933s] copying integration/motorctrl_v2.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.933s] copying integration/__init__.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.933s] copying integration/Movement_Calc_v2.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.933s] running install
+[0.934s] running install_lib
+[0.934s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.934s] copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.934s] copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/motorctrl_v2.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.934s] copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/__init__.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.934s] copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/Movement_Calc_v2.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.934s] byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/integration_node.py to integration_node.cpython-310.pyc
+[0.935s] byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/motorctrl_v2.py to motorctrl_v2.cpython-310.pyc
+[0.936s] byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/__init__.py to __init__.cpython-310.pyc
+[0.936s] byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/Movement_Calc_v2.py to Movement_Calc_v2.cpython-310.pyc
+[0.936s] running install_data
+[0.937s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/share/ament_index
+[0.937s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/share/ament_index/resource_index
+[0.937s] creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/share/ament_index/resource_index/packages
+[0.937s] copying resource/integration -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/share/ament_index/resource_index/packages
+[0.937s] copying package.xml -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/share/integration
+[0.937s] running install_egg_info
+[0.938s] Copying ../../build/integration/integration.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info
+[0.938s] running install_scripts
+[0.952s] Installing integration_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/integration
+[0.952s] writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log'
+[0.973s] Invoked command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/integration' returned '0': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log --single-version-externally-managed install_data

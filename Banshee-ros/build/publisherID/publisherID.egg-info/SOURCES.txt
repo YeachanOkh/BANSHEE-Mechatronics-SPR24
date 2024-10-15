@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/publisherID/publisherID.egg-info/PKG-INFO
+../../build/publisherID/publisherID.egg-info/SOURCES.txt
+../../build/publisherID/publisherID.egg-info/dependency_links.txt
+../../build/publisherID/publisherID.egg-info/entry_points.txt
+../../build/publisherID/publisherID.egg-info/requires.txt
+../../build/publisherID/publisherID.egg-info/top_level.txt
+../../build/publisherID/publisherID.egg-info/zip-safe
+publisherID/__init__.py
+publisherID/sendarucoID.py
+resource/publisherID
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

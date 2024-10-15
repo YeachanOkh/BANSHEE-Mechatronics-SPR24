@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/publisherID/publisherID.egg-info
+writing ../../build/publisherID/publisherID.egg-info/PKG-INFO
+writing dependency_links to ../../build/publisherID/publisherID.egg-info/dependency_links.txt
+writing entry points to ../../build/publisherID/publisherID.egg-info/entry_points.txt
+writing requirements to ../../build/publisherID/publisherID.egg-info/requires.txt
+writing top-level names to ../../build/publisherID/publisherID.egg-info/top_level.txt
+writing manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+reading manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+writing manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib/publisherID
+copying publisherID/sendarucoID.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib/publisherID
+copying publisherID/__init__.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib/publisherID
+running install
+running install_lib
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID
+copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib/publisherID/sendarucoID.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID
+copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build/lib/publisherID/__init__.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID
+byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID/sendarucoID.py to sendarucoID.cpython-310.pyc
+byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/share/ament_index
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/share/ament_index/resource_index
+creating /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/share/ament_index/resource_index/packages
+copying resource/publisherID -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/share/publisherID
+running install_egg_info
+Copying ../../build/publisherID/publisherID.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisher_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/publisherID
+writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/install.log'

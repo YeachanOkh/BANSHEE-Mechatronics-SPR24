@@ -1,0 +1,21 @@
+[0.756s] Invoking command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/publisherID': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/publisherID build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/install.log --single-version-externally-managed install_data
+[0.916s] running egg_info
+[0.917s] writing ../../build/publisherID/publisherID.egg-info/PKG-INFO
+[0.917s] writing dependency_links to ../../build/publisherID/publisherID.egg-info/dependency_links.txt
+[0.917s] writing entry points to ../../build/publisherID/publisherID.egg-info/entry_points.txt
+[0.917s] writing requirements to ../../build/publisherID/publisherID.egg-info/requires.txt
+[0.917s] writing top-level names to ../../build/publisherID/publisherID.egg-info/top_level.txt
+[0.917s] reading manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+[0.918s] writing manifest file '../../build/publisherID/publisherID.egg-info/SOURCES.txt'
+[0.918s] running build
+[0.918s] running build_py
+[0.918s] running install
+[0.919s] running install_lib
+[0.919s] running install_data
+[0.919s] running install_egg_info
+[0.920s] removing '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID-0.0.0-py3.10.egg-info' (and everything under it)
+[0.920s] Copying ../../build/publisherID/publisherID.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages/publisherID-0.0.0-py3.10.egg-info
+[0.921s] running install_scripts
+[0.935s] Installing publisher_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/publisherID
+[0.936s] writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/install.log'
+[0.962s] Invoked command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/publisherID' returned '0': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/publisherID/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/publisherID build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/publisherID/install.log --single-version-externally-managed install_data

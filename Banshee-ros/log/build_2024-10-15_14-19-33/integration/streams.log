@@ -1,0 +1,24 @@
+[0.779s] Invoking command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/integration': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log --single-version-externally-managed install_data
+[0.940s] running egg_info
+[0.941s] writing ../../build/integration/integration.egg-info/PKG-INFO
+[0.941s] writing dependency_links to ../../build/integration/integration.egg-info/dependency_links.txt
+[0.941s] writing entry points to ../../build/integration/integration.egg-info/entry_points.txt
+[0.941s] writing requirements to ../../build/integration/integration.egg-info/requires.txt
+[0.941s] writing top-level names to ../../build/integration/integration.egg-info/top_level.txt
+[0.942s] reading manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.943s] writing manifest file '../../build/integration/integration.egg-info/SOURCES.txt'
+[0.943s] running build
+[0.943s] running build_py
+[0.943s] copying integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration
+[0.943s] running install
+[0.943s] running install_lib
+[0.944s] copying /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build/lib/integration/integration_node.py -> /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration
+[0.944s] byte-compiling /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration/integration_node.py to integration_node.cpython-310.pyc
+[0.945s] running install_data
+[0.945s] running install_egg_info
+[0.946s] removing '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info' (and everything under it)
+[0.946s] Copying ../../build/integration/integration.egg-info to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages/integration-0.0.0-py3.10.egg-info
+[0.947s] running install_scripts
+[0.960s] Installing integration_node script to /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/integration
+[0.960s] writing list of installed files to '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log'
+[0.988s] Invoked command in '/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/src/integration' returned '0': PYTHONPATH=/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/install/integration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/integration build --build-base /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/build install --record /home/ubuntu/BANSHEE-Mechatronics-SPR24/Banshee-ros/build/integration/install.log --single-version-externally-managed install_data
