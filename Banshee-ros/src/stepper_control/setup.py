@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'stepper_node = stepper_control.stepper_node:main',
+            "stepper_node = stepper_control.stepper_node:main"
         ],
     },
 )
