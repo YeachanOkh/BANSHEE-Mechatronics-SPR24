@@ -212,38 +212,51 @@ Command_dict = {
 
 
 class IntegrationNode(Node):
-  def __init__(self):
-      super().__init__('Integration_Node')
-      self.get_logger().info("Integration Node has started.")
+    def __init__(self):
+        super().__init__('Integration_Node')
+        self.get_logger().info("Integration Node has started.")
+        
+        # Subscriber for 'done' signal from stepper node
+        self.subscription = self.create_subscription(
+            Bool,
+            '/stepper/done',  
+            self.done_callback,
+            10
+        )
+        
+        # Flag to indicate if the node has received the signal to start
+        self.start_signal_received = False
 
+    def done_callback(self, msg):
+        if msg.data:
+            self.get_logger().info("Received 'done' signal from Stepper Node. Integration Node is now ready to execute commands.")
+            self.start_signal_received = True  
 
-
-
-  def run(self):
-      while rclpy.ok():
-          command = input("Enter a command: ")
-          if command in Command_dict:
-              startsetup()
-              Command_dict[command]()
-              startsetup()
-          elif command == "exit":
-              print("Exiting program.")
-              break
-          else:
-              print("Invalid command. Please try again.")
-
-
-
+    def run(self):
+        while rclpy.ok():
+            if not self.start_signal_received:
+                self.get_logger().info("Waiting for 'done' signal from Stepper Node...")
+                rclpy.spin_once(self, timeout_sec=1.0)  
+                continue  
+            
+            # Start processing commands after receiving the 'done' signal
+            command = input("Enter a command: ")
+            if command in Command_dict:
+                startsetup()
+                Command_dict[command]()
+                startsetup()
+            elif command == "exit":
+                print("Exiting program.")
+                break
+            else:
+                print("Invalid command. Please try again.")
 
 def main(args=None):
-  rclpy.init(args=args)
-  node = IntegrationNode()
-  node.run()
-  rclpy.shutdown()
+    rclpy.init(args=args)
+    node = IntegrationNode()
+    node.run()
+    rclpy.shutdown()
 
 
-
-
-# run the main function
 if __name__ == '__main__':
-  main()
+    main()
