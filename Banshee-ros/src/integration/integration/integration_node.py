@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-
-
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool  # Import message type for the 'done' signal
@@ -13,9 +10,6 @@ import numpy as np
 import time
 import cv2
 
-
-
-
 # Define motor ID
 BASE_ID = 1
 BICEP_ID = 2
@@ -24,12 +18,8 @@ WRIST_ID = 4
 CLAW_ID = 0
 
 
-
-
 # Define port number for Raspberry Pi
 PORT_NUM = '/dev/ttyUSB0'  # for rpi
-
-
 
 
 # Define move mode and address for present position
@@ -37,19 +27,13 @@ MOVEARM_MODE = 1
 ADDR_PRESENT_POSITION = 132
 
 
-
-
 # List of all motor IDs
 ALL_IDs = [BASE_ID, BICEP_ID, FOREARM_ID, WRIST_ID, CLAW_ID]
 MOVE_IDs = [BASE_ID, BICEP_ID, FOREARM_ID, WRIST_ID, CLAW_ID]
 
 
-
-
 # Initialize motor port
 motor.portInitialization(PORT_NUM, ALL_IDs)
-
-
 
 
 # Calculate the angle for the max length reaching out in the x position
@@ -220,11 +204,7 @@ class IntegrationNode(Node):
         
         # Subscriber for 'done' signal from stepper node
         self.subscription = self.create_subscription(
-            Bool,
-            '/stepper/done',  
-            self.done_callback,
-            10
-        )
+            Bool,'/stepper/done', self.done_callback, 10)
         
         # Flag to indicate if the node has received the signal to start
         self.start_signal_received = False
