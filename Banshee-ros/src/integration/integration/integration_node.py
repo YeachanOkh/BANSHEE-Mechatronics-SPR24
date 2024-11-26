@@ -2,7 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Bool, Int8  # Import message type for the 'done' signal
+from std_msgs.msg import Bool, Int8, String  # Import message type for the 'done' signal
 import math
 from integration import motorctrl_v2 as motor
 from integration import Movement_calc_v2 as calculation
@@ -165,10 +165,24 @@ Command_dict = {
     "grab high": Grab_high,
     "grab low": Grab_low,
     "push low": Push_low,
-    "drone": Drone_grab,
+    "push high": Push_high,
+    "drone grab": Drone_grab,
     "close": Close,
     "open": Open,
     "setup": startsetup,
+}
+
+# Mode-to-action mapping
+MODE_0 = {
+    0: Grab_high,
+    1: Grab_low,
+    2: Drone_grab
+}
+
+MODE_1 = {
+    0: Push_high,
+    1: Push_low,
+    2: Drone_push
 }
 
 class IntegrationNode(Node):
@@ -177,47 +191,35 @@ class IntegrationNode(Node):
         self.mode = 0
         self.get_logger().info("Integration Node has started.")
         
-        # Subscriber for 'ConfirmPosition' signal from Camera node
-        self.subscription = self.create_subscription(
+        # Subscriber for commands
+        self.armCommand = self.create_subscription(
           Int8,'DestinationConfirm', self.done_callback, 10)
         
+        # Publisher for task completion
         self.armFinished = self.create_publisher(
           Bool, 'ArmDone', 10)
         
-        # Flag to indicate if the node has received the signal to start
-        self.start_signal_received = False
-        self.batteryLevel = None
-
-        self.run_timer = self.create_timer(0.1, self.run)
-
     def done_callback(self, msg):
-      self.start_signal_received = True
-    #   self.batteryLevel = msg.data
-      self.get_logger().info(f"Received batteryLevel {self.batteryLevel} from Camera Node. Integration Node is now ready to execute commands.")
+        command = msg.data
+        self.get_logger().info(f"Received command: {command} in Mode {self.mode}")
 
-    def run(self): 
-      if self.start_signal_received and self.mode == 0:
-        # Proceed to command execution after receiving 'done' signal
-        # pull_out(self.batteryLevel)
-        startsetup()
-        Close()
-        Push_low()
-        self.mode = 1
-        self.start_signal_received = False
-        msg = Bool()
-        # msg.data = True
-        self.armFinished.publish(msg)
+        # Execute action based on mode and command
+        if self.mode == 0:
+            MODE_0[command]()
+            self.mode = 1  # Switch to Mode 1 after execution
+        elif self.mode == 1:
+            MODE_1[command]()
+            self.mode = 0  # Switch back to Mode 0 after execution
+        else:
+            self.get_logger().warning(f"Invalid command: {command} for Mode {self.mode}")
 
-      elif self.start_signal_received and self.mode == 1:
-        # Proceed to command execution after receiving 'done' signal
-        # push_in(self.batteryLevel)
-        startsetup()
-        Close()
-        self.mode = 0
-        self.start_signal_received = False
-        msg = Bool()
-        # msg.data = True
-        self.armFinished.publish(True)
+        self.arm_done()
+
+    def arm_done(self):
+        task_done_msg = Bool()
+        task_done_msg.data = True
+        self.armFinished.publish(task_done_msg)
+        self.get_logger().info("Task completed signal published.")
 
 def main(args=None):
     rclpy.init(args=args)
